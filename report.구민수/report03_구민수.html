@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>리포트 3</title>
+
+        <style>
+            ul{
+                list-style-type: none;
+            }
+
+            li{
+                line-height: 30px;
+            }
+
+            .h1{
+                font-weight: bold;
+            }
+
+            #body{
+                width:520px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;  
+                margin-bottom: 15px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="body">
+            <h1>프런트앤드 개발자 지원서</h1>
+            <p>HTML, CSS, javascript에 대한 기술적 이해와 경험이 있는 분은 찾습니다.</p>
+            <hr>
+
+        <form>
+            <ul>
+                <li class="h1">개인정보</li><br>
+                <ul>
+                    <li>
+                        <lable for="app_name">이름</lable>
+                        <input type="text" name="applicant" id="app_name" placeholder="공백없이 입력하세요" autofocus required>
+                    </li>
+                    <li>
+                        <lable for="pho_number">연락처</lable>
+                        <input type="number" name="phon_number" id="pho_number">
+                    </li>
+                </ul>
+
+                <br>
+
+                <li class="h1">지원 분야</li><br>
+                <ul>
+                    <li>
+                        <input type="radio" name="field" id="web_pub" value="wp">
+                        <label for="web_pub">왭 퍼블리싱</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="field" id="web_app" value="wa">
+                        <label for="web_app">왭 애플리케이션 개발</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="field" id="web_pro" value="wd">
+                        <label for="web_pro">개발 환경 개선</label>
+                    </li>
+                </ul>
+
+                <br>
+
+                <p class="h1">지원동기</p>
+                <textarea name="user_infor" id="user_info" cols="60" rows="5" placeholder="본사 지원 동기를 간단히 써주세요."></textarea>
+                <br>
+                <input type="submit" value="접수하기">
+                <input type="reset" value="다시 쓰기">
+            </ul>
+        </form>
+        </div>
+        </fieldset>
+    </body>
+</html>
